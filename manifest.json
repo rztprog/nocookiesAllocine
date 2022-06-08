@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "nocookiesAllocine",
+  "version": "1.0",
+
+  "description": "Supprime la bannière cookies sur le site Allocine.fr.",
+
+  "icons": {
+    "48": "icons/nocookiesAllocine48x48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.allocine.fr/*"],
+      "js": ["nocookiesAllocine.js"]
+    }
+  ]
+
+}
